@@ -1,0 +1,10 @@
+<!-- Placeholder Instagram icon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" aria-hidden="true">
+  <radialGradient id="a" cx="0" cy="0" r="1">
+    <stop offset="0" stop-color="#f09433"/>
+    <stop offset="0.5" stop-color="#e6683c"/>
+    <stop offset="1" stop-color="#cc2e7e"/>
+  </radialGradient>
+  <rect width="24" height="24" rx="6" fill="url(#a)" />
+  <path d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zM12 15.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.5 7.2a1.12 1.12 0 1 1 0-2.24 1.12 1.12 0 0 1 0 2.24z" fill="#fff"/>
+</svg>

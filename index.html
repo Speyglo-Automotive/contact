@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Speyglo Automotive — Connect With Us</title>
+  <!--
+    Tip: To use Google Fonts, uncomment the link below and update --font-family in css/style.css
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       FULL-SCREEN EXPANDING LOADER
+       - Displays centered logo inside circular container
+       - Covers the entire viewport and reveals the main page after animation
+       Comments in JS explain how to disable or change timings
+       ========================================== -->
+  <!-- If you publish to a host that doesn't support folders, run `scripts\flatten-assets.ps1` to copy the images to the root. -->
+  <div id="loader" class="loader" role="status" aria-label="Loading">
+    <div class="loader-circle" aria-hidden="true">
+      <!-- Using SVG directly for the loader ensures it displays correctly and crisply.
+           No PNG fallback here so your SVG is always used. -->
+      <img src="L.svg" id="loader-logo" alt="Speyglo Logo" width="72" height="72">
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MAIN PAGE
+       - Light-themed layout with top logo and social links
+       - Replace icons in /icons and update links below
+       ========================================== -->
+  <main class="site">
+
+    <header class="site-header">
+      <!--
+        Logo wrapper: gives your transparent logo a white background and prevents visual pixelation
+        Recommendation: include logo.png (1x) and logo@2x.png (2x @ retina)
+      -->
+      <span class="brand-logo-wrapper">
+        <!-- Use SVG directly (no PNG fallback) so the logo always appears as vector artwork -->
+        <img class="brand-logo" src="L.svg" alt="Speyglo Automotive Logo" width="180" height="56">
+      </span>
+    </header>
+ 
+    <section class="hero">
+      <h1>Connect With Us</h1>
+
+      <!-- Note: JS fallback will try root-level filenames if foldered assets (e.g. icons/) are not available on the host -->
+      <nav class="social-grid" aria-label="Speyglo social links">
+        <!-- Each icon prefers PNG files (icons/*.png). If a PNG is missing, SVG fallback is used automatically -->
+        <a class="social" href="https://web.facebook.com/p/Speyglo-Automotive-100068931681894" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source srcset="facebook.png" type="image/png">
+            <img src="facebook.svg" alt="Facebook">
+          </picture>
+          <span class="sr">Facebook</span>
+        </a>
+
+        <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source srcset="instagram.png" type="image/png">
+            <img src="instagram.svg" alt="Instagram">
+          </picture>
+          <span class="sr">Instagram</span>
+        </a>
+
+        <a class="social" href="https://www.tiktok.com/@speygloautomotive" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source srcset="tiktok.png" type="image/png">
+            <img src="tiktok.svg" alt="TikTok">
+          </picture>
+          <span class="sr">TikTok</span>
+        </a>
+
+        <a class="social" href="https://wa.me/+94764089856" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source srcset="whatsapp.png" type="image/png">
+            <img src="whatsapp.svg" alt="WhatsApp">
+          </picture>
+          <span class="sr">WhatsApp</span>
+        </a>
+
+        <a class="social" href="tel:+94764089856">
+          <picture>
+            <source srcset="call.png" type="image/png">
+            <img src="call.svg" alt="Call">
+          </picture>
+          <span class="sr">Call</span>
+        </a>
+      </nav>
+
+      <!-- Optional About Section -->
+      <article class="about">
+        <h2>About Speyglo Automotive</h2>
+        <p>
+          Speyglo Automotive is your trusted partner for vehicle care and customization. From detailing and repairs to performance upgrades, we bring precision and passion to every ride.
+        </p>
+        <!-- To hide this section, add `.hidden` to the .about element or remove the block entirely. -->
+      </article>
+
+      <!-- Find Us / Google Maps link -->
+      <div class="find-us">
+        <a class="btn-map" href="https://www.google.com/maps?q=Speyglo+Automotive+Nugegoda" target="_blank" rel="noopener noreferrer">Find Us</a>
+        <!-- To change location update the href above. To embed a map later, replace this link with an iframe. -->
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> Speyglo Automotive</small>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
